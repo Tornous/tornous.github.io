@@ -11,6 +11,6 @@ var handleips=bannedips.join("|")
 handleips=new RegExp(handleips, "i")
 
 if (ip.search(handleips)!=-1){ 
-alert("Your IP has been banned from this site. Redirecting...")
-window.location.replace("http://www.google.com")
+alert("Your IP has been marked as 'Problematic' and you will not be able to continue normally... sending you to the blocked version.")
+window.location.replace("https://tornous.github.io/problem")
 }
